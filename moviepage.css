@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins, sans-serif;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url(Others/Background.jpg);
+    background-size: cover;
+}
+
+#background {
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: max-content;
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    backdrop-filter: blur(5px);
+}
+
+
+/* ----Header---- */
+
+.header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: transparent;
+    z-index: 1000;
+}
+
+nav {
+    background-color: transparent;
+}
+
+.navbar {
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    list-style: none;
+    padding: 10px;
+}
+
+.navbar-border {
+    border: 1px solid rgb(3, 2, 2);
+    background-color: rgba(0, 0, 0, 0.8);
+    margin: 20px 0 0 10px;
+    border-radius: 15px;
+    padding: 8px 0 8px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar a {
+    color: whitesmoke;
+    margin: 0 15px;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: rgb(174, 0, 254);
+}
+
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+
+/* ----Movie Info---- */
+
+.page-border {
+    margin: 30px 0px;
+    border-width: 1px;
+    width: 100%;
+    height: 100%;
+    padding: 25px;
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.film-image {
+    margin: 10px 0 10px 20px;
+    width: fit-content;
+    height: fit-content;
+
+}
+
+.film-image img {
+    width: 350px;
+    height: 500px;
+    border-radius: 10px;
+    align-items: center;
+}
+
+
+#movies {
+    display: flex;
+    justify-content:flex-start;
+}
+
+.film-title {
+    margin: 10px 0 0 40px;
+    font-size: 40px;
+    font-family: Arial, sans-serif;
+    font-weight: 700;
+    color: whitesmoke;
+}
+
+.film-year {
+    font-size: 23px;
+    font-weight: 400;
+    padding: 20px 0 0 10px;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.genre {
+    font-size: 18px;
+    padding: 0 0 0 2px;
+    font-weight: 600;
+    font-family: Arial, sans-serif;
+}
+
+.release-date {
+    font-weight: 600;
+    font-size: 18px;
+    padding: 20px 0 0 2px;
+    margin-top: -30px;
+}
+
+.country {
+    margin-left: 10px;
+    font-weight: 500;
+}
+
+.time-period {
+    font-size: 18px;
+    font-weight: 500;
+    padding: 20px 0 0 2px;
+    margin-top: 5px;
+}
+
+.vote-count {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.vote-average {
+    display: flex;
+    align-items: center;
+}
+
+.trailers {
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.buttonStyle {
+    background-color: transparent;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 10px 0 0 0;
+    margin-left: -17px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.buttonStyle:hover {
+    background-color: transparent;
+    color: rgb(174, 0, 254);
+}
+
+.tagline {
+    font-size: 18px;
+    font-weight: 400;
+    padding: 20px 0 0 2px;
+    margin-top: 10px;
+    margin-bottom: -10px;
+    color: rgba(255, 255, 255, 0.7);
+    font-style: italic;
+}
+
+.slider-overview {
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 30px;
+    cursor: default;
+}
+
+/* ----Full screen trailer---- */
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal iframe {
+    border: none;
+}
+
+.modal .close-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    color: #fff;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
