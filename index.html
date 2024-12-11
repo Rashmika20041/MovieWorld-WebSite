@@ -25,7 +25,13 @@
     <div class="background-colur">
         <header>
             <nav class="navbar">
-                <ul>
+                <ul class="sidebar">
+
+                    <li onclick=hideslidebar()>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                        </a>
+                    </li>
                     <li>
                         <a href="index.html" class="active">Home</a>
                     </li>
@@ -33,15 +39,34 @@
                         <a href="Upcoming.html">Upcoming</a>
                     </li>
                     <li>
-                        <img src="Others/Black_Illustrative_Education_Logo__4_-removebg-preview (1).png" class="logo">
-                    </li>
-                    <li>
                         <a href="NowPlaying.html">Now Playing</a>
                     </li>
-                    <li class="search-icon">
+                    <li>
                         <a class="social-icon__link" href="javascript:void(0);" onclick="toggleSearchBar()">
                             <i class='bx bx-search-alt bx-tada'></i>
                         </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="hideOnMobile">
+                        <a href="index.html" class="active">Home</a>
+                    </li>
+                    <li class="hideOnMobile">
+                        <a href="Upcoming.html">Upcoming</a>
+                    </li>
+                    <li>
+                        <img src="Others/Black_Illustrative_Education_Logo__4_-removebg-preview (1).png" class="logo">
+                    </li>
+                    <li class="hideOnMobile">
+                        <a href="NowPlaying.html">Now Playing</a>
+                    </li>
+                    <li class="hideOnMobile">
+                        <a class="social-icon__link" href="#" onclick="toggleSearchBar()">
+                            <i class='bx bx-search-alt bx-tada'></i>
+                        </a>
+                    </li>
+                    <li onclick=showSlidebar() class="menu-button">
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
                     </li>
                 </ul>
             </nav>
@@ -124,23 +149,23 @@
                             <h4>Follow Me</h4>
                         </div>
                         <ul class="social-icon">
-                            <li class="social-icon__item"><a class="social-icon__link"
+                            <li class="social-icon__item"><a
                                     href="https://github.com/Rashmika20041">
                                     <i class='bx bxl-github bx-md'></i>
                                 </a></li>
-                            <li class="social-icon__item"><a class="social-icon__link"
+                            <li class="social-icon__item"><a
                                     href="https://www.facebook.com/Shavindu20041?mibextid=LQQJ4d">
                                     <i class='bx bxl-facebook-circle bx-md'></i>
                                 </a></li>
-                            <li class="social-icon__item"><a class="social-icon__link"
+                            <li class="social-icon__item"><a
                                     href="https://www.linkedin.com/in/rashmika-perera-b49142291/">
                                     <i class='bx bxl-linkedin-square bx-md'></i>
                                 </a></li>
-                            <li class="social-icon__item"><a class="social-icon__link"
+                            <li class="social-icon__item"><a
                                     href="https://wa.me/+94763249330">
                                     <i class='bx bxl-whatsapp bx-md'></i>
                                 </a></li>
-                            <li class="social-icon__item"><a class="social-icon__link"
+                            <li class="social-icon__item"><a
                                     href="mailto:rashmikaperera330@gmail.com">
                                     <i class='bx bxl-gmail bx-md'></i>
                                 </a></li>

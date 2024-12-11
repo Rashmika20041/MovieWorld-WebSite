@@ -215,3 +215,13 @@ function toggleSearchBar() {
   searchInput.classList.toggle('show');
   searchButton.classList.toggle('show');
 }
+
+function showSlidebar(){
+  const sliderBorder = document.querySelector('.sidebar');
+  sliderBorder.style.display = 'flex';
+}
+
+function hideslidebar(){
+  const sliderBorder = document.querySelector('.sidebar');
+  sliderBorder.style.display = 'none';
+}
