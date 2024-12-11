@@ -20,7 +20,7 @@ body {
     background-position: center;
     backdrop-filter: blur(6px);
     height: max-content;
-    width: fit-content;
+    width: 100%;
     z-index: -1;
     background-attachment: fixed;
 }
