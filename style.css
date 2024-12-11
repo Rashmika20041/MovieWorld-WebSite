@@ -508,8 +508,9 @@ footer img {
     display: flex;
     font-size: 15px;
     text-decoration: none;
-    justify-content: center;
+    justify-content: left;
     margin-left: -30px;
+    margin-bottom: 3px;
     list-style: none;
     font-weight: 500;
 }
